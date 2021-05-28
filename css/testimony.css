@@ -1,0 +1,35 @@
+.testimony {
+  border-radius: 24px;
+  border: white solid 4px;
+  padding: 24px;
+  background: linear-gradient(rgba(255, 255, 255, 0.2),rgba(255, 0, 0, 0)) padding-box, linear-gradient(to top, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)) border-box;
+  text-align: center;
+  margin: 40px 0 80px 0;
+}
+
+.testimony .testimony-coment {
+  font: var(--headline5);
+  text-align: left;
+} 
+
+.testimony .testimony-name {
+  font: var(--caption);
+  text-align: left;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 768px) {
+	.testimony {
+    padding: 80px;
+  }
+
+  .testimony .testimony-coment {
+    font: var(--headline4);
+    text-align: center;
+  }
+
+  .testimony .testimony-name {
+    font: var(--headline5);
+    text-align: center;
+  }
+}

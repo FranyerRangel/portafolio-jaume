@@ -1,0 +1,34 @@
+.coment {
+  padding-block-start: 200px;
+  padding-block-end: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.coment p {
+  margin: 0;
+}
+
+.coment .coment-first-text {
+  font: var(--body1);
+}
+
+.coment .coment-second-text {
+  font: var(--button);
+}
+
+.coment img {
+  inline-size: 80px;
+  block-size: 80px;
+}
+
+@media screen and (max-width: 768px) {
+	.coment {
+    padding-block-start: 40px;
+    padding-block-end: 40px;
+  }
+}

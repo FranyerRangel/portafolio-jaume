@@ -1,0 +1,54 @@
+.hero {
+	padding-block-start: 16px;
+}
+
+.hero-description {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.hero-image {
+	text-align: center;
+}
+
+.hero-image img {
+	max-inline-size: 100%;
+	block-size: auto;
+	border-radius: 24px;
+}
+
+.hero h1 {
+	font: var(--headline3);
+	margin: 0;
+}
+
+.hero h1 span:nth-of-type(1){
+	font: var(--headline5);
+	display: block;
+}
+
+@media screen and (min-width: 768px) {
+	.hero {
+		display: flex;
+		gap: 32px;
+	}
+
+	.hero-description {
+		order: 1;
+		max-inline-size: 450px;
+	}
+
+	.hero-image {
+		order: 2;
+		text-align: end;
+		flex: 1;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.hero-image img {
+		inline-size: 500px;
+		block-size: 504px;
+	}
+}
